@@ -6,6 +6,7 @@
 ```js
 const {config} = require('bedrock');
 
+// set this to false to ignore SSL errors in development.
 config['https-agent'].rejectUnauthorized = true;
 ```
 
