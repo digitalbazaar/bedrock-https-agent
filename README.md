@@ -2,7 +2,6 @@
 
 ## Config
 
-
 ```js
 const {config} = require('bedrock');
 
