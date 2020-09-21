@@ -1,5 +1,10 @@
 # bedrock-https-agent ChangeLog
 
+## 1.2.0 - 2020-09-xx
+
+### Added
+- Support setting other `agent` config options via `config`.
+
 ## 1.1.0 - 2020-07-01
 
 ### Added
