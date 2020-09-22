@@ -18,10 +18,10 @@
   "nyc": {
     "excludeNodeModules": false,
     "include": [
-      "node_modules/bedrock-kms/**"
+      "node_modules/bedrock-https-agent/**"
     ],
     "exclude": [
-      "node_modules/bedrock-kms/node_modules/**"
+      "node_modules/bedrock-https-agent/node_modules/**"
     ]
   }
 }
