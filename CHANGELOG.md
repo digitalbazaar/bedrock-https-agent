@@ -1,9 +1,15 @@
 # bedrock-https-agent ChangeLog
 
-## 1.2.0 - 2020-09-xx
+## 2.0.0 - 2020-09-xx
+
+### Changed
+- **BREAKING**: Enable agent `keepAlive` by default.
 
 ### Added
+- `httpsAgent` or `agent` may now be destructured from `bedrock-https-agent`
+  at the top of a file.
 - Support setting other `agent` config options via `config`.
+- Added test coverage.
 
 ## 1.1.0 - 2020-07-01
 
