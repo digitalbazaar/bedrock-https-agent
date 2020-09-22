@@ -9,4 +9,11 @@ const {config} = require('bedrock');
 config['https-agent'].rejectUnauthorized = true;
 ```
 
-## API Reference
+## Usage
+
+```js
+const {agent} = require('bedrock-https-agent');
+const {httpClient} = require('@digitalbazaar/http-client');
+
+const result = await httpClient.get('http://httpbin.org/json', {agent});
+```
