@@ -1,6 +1,6 @@
 # bedrock-https-agent ChangeLog
 
-## 2.0.0 - 2020-09-xx
+## 2.0.0 - 2020-09-22
 
 ### Changed
 - **BREAKING**: Enable agent `keepAlive` by default.
