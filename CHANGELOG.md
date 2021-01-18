@@ -1,5 +1,14 @@
 # bedrock-https-agent ChangeLog
 
+## 3.0.0 - 2021-xx-xx
+
+### Changed
+- **BREAKING**: Use `agentkeepalive` package to provide HTTPS agent
+  by default.
+
+### Added
+- Export default HttpsAgent class.
+
 ## 2.0.0 - 2020-09-22
 
 ### Changed
