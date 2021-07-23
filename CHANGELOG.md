@@ -1,5 +1,10 @@
 # bedrock-https-agent ChangeLog
 
+## 2.1.0 - 2021-07-xx
+
+### Changed
+- Update peer dependencies; use bedrock@4.
+
 ## 2.0.0 - 2020-09-22
 
 ### Changed
