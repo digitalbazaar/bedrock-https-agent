@@ -23,7 +23,7 @@ describe('bedrock-https-agent API', () => {
     should.exist(res);
     res.should.equal(true);
   });
-  it('should get proper prototype', async () => {
+  it('should get proper prototype', () => {
     let err;
     let res;
     try {
@@ -52,24 +52,19 @@ describe('bedrock-https-agent API', () => {
       configurable: true
     });
   });
-  it('should properly set property value', async () => {
+  it('should properly set property value', () => {
     let err;
     let res;
     // set keepAlive to false
     httpsAgent.keepAlive = false;
     try {
-      res = Object.getOwnPropertyDescriptor(httpsAgent, 'keepAlive');
+      res = httpsAgent.keepAlive;
     } catch(e) {
       err = e;
     }
     should.exist(res);
     should.not.exist(err);
-    res.should.eql({
-      value: false,
-      writable: true,
-      enumerable: true,
-      configurable: true
-    });
+    res.should.eql(false);
   });
 });
 
@@ -78,54 +73,37 @@ describe('invalidStateError', () => {
     // reset https agent to be null;
     _resetHttpsAgent();
   });
-  it('should throw error if agent is null', async () => {
-    let err;
-    let res;
-    try {
-      res = Object.getPrototypeOf(httpsAgent);
-    } catch(e) {
-      err = e;
-    }
-    should.not.exist(res);
-    should.exist(err);
-    err.name.should.equal('InvalidStateError');
-    err.message.should.equal('The agent is not ready.');
-
-    let err2;
-    let res2;
-    try {
-      res2 = Object.getOwnPropertyDescriptor(httpsAgent, 'keepAlive');
-    } catch(e) {
-      err2 = e;
-    }
-    should.not.exist(res2);
-    should.exist(err2);
-    err2.name.should.equal('InvalidStateError');
-    err2.message.should.equal('The agent is not ready.');
-
-    let err3;
-    let res3;
-    try {
-      res3 = httpsAgent.keepAlive;
-    } catch(e) {
-      err3 = e;
-    }
-    should.not.exist(res3);
-    should.exist(err3);
-    err3.name.should.equal('InvalidStateError');
-    err3.message.should.equal('The agent is not ready.');
-
-    let err4;
-    let res4;
-    try {
-      // set keepAlive to false
-      res4 = httpsAgent.keepAlive = false;
-    } catch(e) {
-      err4 = e;
-    }
-    should.not.exist(res4);
-    should.exist(err4);
-    err4.name.should.equal('InvalidStateError');
-    err4.message.should.equal('The agent is not ready.');
+  it('should throw error if agent is null when getting prototype', () => {
+    _assertInvalidStateError(() => {
+      Object.getPrototypeOf(httpsAgent);
+    });
+  });
+  it('should throw error if agent is null when getting property descriptor',
+    () => {
+      _assertInvalidStateError(() => {
+        Object.getOwnPropertyDescriptor(httpsAgent, 'keepAlive');
+      });
+    });
+  it('should throw error if agent is null when getting property value', () => {
+    _assertInvalidStateError(() => {
+      httpsAgent.keepAlive;
+    });
+  });
+  it('should throw error if agent is null when setting property value', () => {
+    _assertInvalidStateError(() => {
+      httpsAgent.keepAlive = false;
+    });
   });
 });
+
+function _assertInvalidStateError(fn) {
+  let err;
+  try {
+    fn();
+  } catch(error) {
+    err = error;
+  }
+  should.exist(err);
+  err.name.should.equal('InvalidStateError');
+  err.message.should.equal('The agent is not ready.');
+}
