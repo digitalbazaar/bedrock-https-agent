@@ -1,5 +1,10 @@
 # bedrock-https-agent ChangeLog
 
+## 2.2.0 - 2022-TBD
+
+### Added
+- Add additional tests.
+
 ## 2.1.0 - 2021-07-23
 
 ### Changed
