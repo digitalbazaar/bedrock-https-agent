@@ -3,7 +3,7 @@
 ## 2.2.0 - 2022-TBD
 
 ### Added
-- Add additional tests.
+- Add additional tests and expose private test helper functions in API.
 
 ## 2.1.0 - 2021-07-23
 
