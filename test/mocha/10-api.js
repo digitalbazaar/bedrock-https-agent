@@ -3,7 +3,7 @@
  */
 'use strict';
 
-const {agent, httpsAgent, _resetHttpsAgent} = require('bedrock-https-agent');
+const {agent, httpsAgent, setHttpsAgent} = require('bedrock-https-agent');
 const https = require('https');
 
 describe('bedrock-https-agent API', () => {
@@ -70,8 +70,8 @@ describe('bedrock-https-agent API', () => {
 
 describe('invalidStateError', () => {
   before(() => {
-    // reset https agent to be null;
-    _resetHttpsAgent();
+    // Set https agent to null;
+    setHttpsAgent({httpsAgent: null});
   });
   it('should throw error if agent is null when getting prototype', () => {
     _assertInvalidStateError(() => {
