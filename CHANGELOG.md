@@ -1,6 +1,6 @@
 # bedrock-https-agent ChangeLog
 
-## 2.2.0 - 2022-TBD
+## 2.2.0 - 2022-01-21
 
 ### Added
 - Add additional tests and expose private test helper functions in API.
