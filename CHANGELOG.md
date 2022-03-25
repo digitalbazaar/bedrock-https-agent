@@ -1,6 +1,6 @@
 # bedrock-https-agent ChangeLog
 
-## 2.3.0 - 2022-03-xx
+## 2.3.0 - 2022-03-24
 
 ### Changed
 - Update peer deps:
