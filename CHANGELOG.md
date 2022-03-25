@@ -1,5 +1,13 @@
 # bedrock-https-agent ChangeLog
 
+## 2.3.0 - 2022-03-xx
+
+### Changed
+- Update peer deps:
+  - `bedrock@4.5`.
+- Update internals to use esm style and use `esm.js` to
+  transpile to CommonJS.
+
 ## 2.2.0 - 2022-01-21
 
 ### Added
