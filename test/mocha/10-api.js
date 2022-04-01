@@ -1,10 +1,8 @@
 /*!
- * Copyright (c) 2020 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2020-2022 Digital Bazaar, Inc. All rights reserved.
  */
-'use strict';
-
-const {agent, httpsAgent, _setHttpsAgent} = require('bedrock-https-agent');
-const https = require('https');
+import {agent, httpsAgent, _setHttpsAgent} from '@bedrock/https-agent';
+import https from 'https';
 
 describe('bedrock-https-agent API', () => {
   it('has the proper exports', () => {

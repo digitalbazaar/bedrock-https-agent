@@ -1,6 +1,7 @@
 {
-  "name": "bedrock-https-agent",
+  "name": "@bedrock/https-agent",
   "version": "2.3.1-0",
+  "type": "module",
   "description": "A configurable httpsAgent for Bedrock.",
   "license": "SEE LICENSE IN LICENSE.md",
   "main": "lib",
@@ -21,14 +22,12 @@
     "url": "https://github.com/digitalbazaar/bedrock-https-agent/issues"
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-https-agent",
-  "dependencies": {
-    "esm": "^3.2.25"
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "bedrock": "^4.5.0"
+    "@bedrock/core": "^5.0.0"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "devDependencies": {
     "eslint": "^7.13.0",

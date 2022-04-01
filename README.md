@@ -3,7 +3,7 @@
 ## Config
 
 ```js
-const {config} = require('bedrock');
+import {config} from '@bedrock/core';
 
 // set this to false to ignore SSL errors in development.
 config['https-agent'].rejectUnauthorized = true;
@@ -12,8 +12,8 @@ config['https-agent'].rejectUnauthorized = true;
 ## Usage
 
 ```js
-const {agent} = require('bedrock-https-agent');
-const {httpClient} = require('@digitalbazaar/http-client');
+import {agent} from '@bedrock/https-agent';
+import {httpClient} from '@digitalbazaar/http-client';
 
 const result = await httpClient.get('http://httpbin.org/json', {agent});
 ```
