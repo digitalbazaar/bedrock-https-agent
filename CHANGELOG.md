@@ -1,6 +1,6 @@
 # bedrock-https-agent ChangeLog
 
-## 3.0.0 - 2022-04-xx
+## 3.0.0 - 2022-04-01
 
 ### Changed
 - **BREAKING**: Rename package to `@bedrock/https-agent`.
