@@ -1,6 +1,6 @@
 # bedrock-https-agent ChangeLog
 
-## 3.0.1 - 2022-04-xx
+## 3.0.1 - 2022-04-01
 
 ### Fixed
 - Use `jsdoc-to-markdown@7`.
