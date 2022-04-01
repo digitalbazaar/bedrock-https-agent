@@ -1,8 +1,8 @@
-/*
- * Copyright (c) 2020 Digital Bazaar, Inc. All rights reserved.
+/*!
+ * Copyright (c) 2020-2022 Digital Bazaar, Inc. All rights reserved.
  */
-const bedrock = require('bedrock');
-require('bedrock-https-agent');
+import * as bedrock from '@bedrock/core';
+import '@bedrock/https-agent';
+import '@bedrock/test';
 
-require('bedrock-test');
 bedrock.start();
