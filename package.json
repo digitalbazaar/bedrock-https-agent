@@ -22,7 +22,6 @@
     "url": "https://github.com/digitalbazaar/bedrock-https-agent/issues"
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-https-agent",
-  "dependencies": {},
   "peerDependencies": {
     "@bedrock/core": "^5.0.0"
   },
@@ -32,7 +31,7 @@
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-digitalbazaar": "^2.8.0",
-    "eslint-plugin-jsdoc": "^37.9.7",
+    "eslint-plugin-jsdoc": "^39.2.9",
     "jsdoc-to-markdown": "^7.1.1"
   }
 }
