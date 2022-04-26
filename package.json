@@ -4,7 +4,7 @@
   "type": "module",
   "description": "A configurable httpsAgent for Bedrock.",
   "license": "SEE LICENSE IN LICENSE.md",
-  "main": "lib",
+  "main": "./lib/index.js",
   "scripts": {
     "generate-readme": "jsdoc2md -t readme-template.hbs lib/*.js > README.md",
     "lint": "eslint ."

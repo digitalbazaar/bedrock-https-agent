@@ -1,5 +1,10 @@
 # bedrock-https-agent ChangeLog
 
+## 3.0.2 - 2022-04-xx
+
+### Fixed
+- Fix "main" field in package.json.
+
 ## 3.0.1 - 2022-04-01
 
 ### Fixed
