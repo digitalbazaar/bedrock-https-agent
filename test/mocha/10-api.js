@@ -2,7 +2,7 @@
  * Copyright (c) 2020-2022 Digital Bazaar, Inc. All rights reserved.
  */
 import {agent, httpsAgent, _setHttpsAgent} from '@bedrock/https-agent';
-import https from 'https';
+import https from 'node:https';
 
 describe('bedrock-https-agent API', () => {
   it('has the proper exports', () => {
