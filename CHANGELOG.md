@@ -1,6 +1,6 @@
 # bedrock-https-agent ChangeLog
 
-## 4.0.0 - 2022-04-xx
+## 4.0.0 - 2022-04-28
 
 ### Changed
 - **BREAKING**: Update peer deps:
