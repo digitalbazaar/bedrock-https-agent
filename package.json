@@ -3,7 +3,7 @@
   "version": "4.0.1-0",
   "type": "module",
   "description": "A configurable httpsAgent for Bedrock.",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "Apache-2.0",
   "main": "./lib/index.js",
   "scripts": {
     "generate-readme": "jsdoc2md -t readme-template.hbs lib/*.js > README.md",
