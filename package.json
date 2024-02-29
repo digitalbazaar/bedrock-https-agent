@@ -26,12 +26,12 @@
     "@bedrock/core": "^6.0.0"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-digitalbazaar": "^2.8.0",
-    "eslint-plugin-jsdoc": "^39.2.9",
-    "jsdoc-to-markdown": "^7.1.1"
+    "eslint": "^8.57.0",
+    "eslint-config-digitalbazaar": "^5.0.1",
+    "eslint-plugin-jsdoc": "^48.2.0",
+    "jsdoc-to-markdown": "^8.0.1"
   }
 }
