@@ -16,7 +16,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import {agent, httpsAgent, _setHttpsAgent} from '@bedrock/https-agent';
+import {_setHttpsAgent, agent, httpsAgent} from '@bedrock/https-agent';
 import https from 'node:https';
 
 describe('bedrock-https-agent API', () => {
